@@ -75,6 +75,24 @@ Open your browser at `http://localhost:8501` to view the interactive dashboard!
 
 ---
 
+### 🚀 One-Line Command (Run Everything Together)
+
+To run the complete pipeline (download data, run Apache Spark analysis, and automatically launch the dashboard) in **one single command**:
+
+**Windows (PowerShell / Command Prompt):**
+```powershell
+python analyze_stocks.py; streamlit run app.py
+```
+
+**macOS / Linux / Git Bash:**
+```bash
+python analyze_stocks.py && streamlit run app.py
+```
+
+*(If the analysis output already exists, you can simply launch the dashboard with `streamlit run app.py`)*
+
+---
+
 ## 📊 Dashboard Preview
 
 - **KPI Cards**: Total records, average volume, top-performing stock.
